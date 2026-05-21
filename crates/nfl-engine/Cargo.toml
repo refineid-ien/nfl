@@ -1,0 +1,22 @@
+[package]
+name = "nfl-engine"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "NFL inference engine with attention mechanisms, MLP computation, and sampling strategies"
+
+[dependencies]
+nfl-core = { path = "../nfl-core" }
+nfl-simd = { path = "../nfl-simd" }
+nfl-tokenizer = { path = "../nfl-tokenizer" }
+serde.workspace = true
+serde_cbor.workspace = true
+thiserror.workspace = true
+anyhow.workspace = true
+log.workspace = true
+bytes.workspace = true
+rayon.workspace = true
+memmap2.workspace = true
+ndarray = "0.15"
+rand = "0.8"

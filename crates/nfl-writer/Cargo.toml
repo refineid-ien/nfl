@@ -1,0 +1,19 @@
+[package]
+name = "nfl-writer"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "NFL writer for converting HuggingFace models to .nfl format"
+
+[dependencies]
+nfl-core = { path = "../nfl-core" }
+nfl-quant = { path = "../nfl-quant" }
+nfl-tokenizer = { path = "../nfl-tokenizer" }
+serde.workspace = true
+serde_cbor.workspace = true
+thiserror.workspace = true
+anyhow.workspace = true
+log.workspace = true
+bytes.workspace = true
+rayon.workspace = true

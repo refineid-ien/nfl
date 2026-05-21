@@ -1,0 +1,19 @@
+[package]
+name = "nfl-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Core NFL format parsing, header validation, and memory mapping"
+
+[dependencies]
+serde.workspace = true
+serde_cbor.workspace = true
+thiserror.workspace = true
+anyhow.workspace = true
+log.workspace = true
+bytes.workspace = true
+memmap2.workspace = true
+
+[dev-dependencies]
+tempfile = "3.8"

@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Rust
+target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
+.rust/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Test coverage
+coverage/
+*.profraw
+*.profdata
+
+# Benchmarks
+bench-results/
+*.bench.json
+
+# Temporary files
+*.tmp
+tmp/
+tempfile*

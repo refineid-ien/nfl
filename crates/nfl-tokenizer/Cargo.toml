@@ -1,0 +1,16 @@
+[package]
+name = "nfl-tokenizer"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "NFL tokenizer with CBOR-encoded vocabulary and byte-pair encoding support"
+
+[dependencies]
+serde.workspace = true
+serde_cbor.workspace = true
+thiserror.workspace = true
+anyhow.workspace = true
+log.workspace = true
+bytes.workspace = true
+unicode-normalization = "0.1"

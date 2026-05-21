@@ -1,0 +1,26 @@
+[package]
+name = "nfl-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "CLI tool for NFL format conversion, inspection, and inference"
+
+[[bin]]
+name = "nfl"
+path = "src/main.rs"
+
+[dependencies]
+nfl-core = { path = "../nfl-core" }
+nfl-engine = { path = "../nfl-engine" }
+nfl-writer = { path = "../nfl-writer" }
+nfl-quant = { path = "../nfl-quant" }
+clap.workspace = true
+serde.workspace = true
+serde_json = "1.0"
+thiserror.workspace = true
+anyhow.workspace = true
+env_logger.workspace = true
+log.workspace = true
+bytes.workspace = true
+tokio.workspace = true

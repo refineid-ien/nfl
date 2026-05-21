@@ -1,0 +1,18 @@
+[package]
+name = "nfl-quant"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "NFL quantization layer supporting INT4, INT2, and BF16 mixed precision"
+
+[dependencies]
+nfl-core = { path = "../nfl-core" }
+nfl-simd = { path = "../nfl-simd" }
+serde.workspace = true
+serde_cbor.workspace = true
+thiserror.workspace = true
+anyhow.workspace = true
+log.workspace = true
+bytes.workspace = true
+half = { version = "2.3", features = ["num-traits"] }

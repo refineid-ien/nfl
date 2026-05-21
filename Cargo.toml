@@ -1,0 +1,42 @@
+[workspace]
+members = [
+    "crates/nfl-core",
+    "crates/nfl-engine",
+    "crates/nfl-quant",
+    "crates/nfl-simd",
+    "crates/nfl-tokenizer",
+    "crates/nfl-writer",
+    "crates/nfl-cli",
+]
+
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["NFL Contributors"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/refineid-ien/nfl"
+description = "Neo-Flexible Light Format - Next-generation AI model format and inference runtime"
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_cbor = "0.11"
+thiserror = "1.0"
+anyhow = "1.0"
+log = "0.4"
+env_logger = "0.11"
+clap = { version = "4.4", features = ["derive"] }
+tokio = { version = "1.35", features = ["full"] }
+bytes = "1.5"
+memmap2 = "0.9"
+rayon = "1.8"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+
+[profile.bench]
+inherits = "release"
